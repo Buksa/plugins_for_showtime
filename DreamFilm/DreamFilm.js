@@ -226,7 +226,7 @@
                 page.appendItem("", "separator", {
                     title: new showtime.RichText('Film:')
                 });
-                re = /(?:src='http:\/\/vk.com\/)([^']+)/g;
+                re = /(?:src='.*vk.com\/)([^']+)/g;
                 m = re.execAll(v);
                 if (m.toString()) {
                     for (i = 0; i < m.length; i++) {
